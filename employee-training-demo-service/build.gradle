@@ -10,6 +10,12 @@ buildscript {
     }
 }
 
+jar {
+    baseName = 'gs-actuator-service'
+    version =  '0.1.0'
+}
+
+
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -36,6 +42,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-aop")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
     runtime "com.h2database:h2"
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile("org.projectlombok:lombok:1.16.6")
