@@ -1,3 +1,5 @@
+rootProject.name='infyRegistrationApplication'
+
 include 'employee-training-demo-service'
-//include 'employee-training-demo-acceptance-test'
+include 'employee-training-demo-acceptance-test'
 
