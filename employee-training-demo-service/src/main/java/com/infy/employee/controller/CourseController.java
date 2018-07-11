@@ -35,7 +35,7 @@ public class CourseController {
     @RequestMapping(value = "saveCourse",method = RequestMethod.POST)
     @ApiOperation(value = "save Course")
     @ApiResponses(value = {@ApiResponse(code = 201,message = "Created")})
-    public ResponseEntity<Course> CreateCourse(@RequestBody() CourseCreateRequest course){
+    public ResponseEntity<Course> CreateCourse(@RequestBody CourseCreateRequest course){
         Course course1=courseService.saveCourse(course);
         return new ResponseEntity<Course>(course1, HttpStatus.OK);
     }
