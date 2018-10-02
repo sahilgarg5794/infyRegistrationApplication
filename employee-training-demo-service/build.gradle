@@ -46,7 +46,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.jmockit/jmockit
     testCompile group: 'org.jmockit', name: 'jmockit', version: '1.8'
     // https://mvnrepository.com/artifact/org.mockito/mockito-core
-    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+    //testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
     compile("org.projectlombok:lombok:1.16.6")
     compile("org.springframework:spring-jdbc:4.3.3.RELEASE")
     //compile("org.mariadb.jdbc:mariadb-java-client:1.5.7")
