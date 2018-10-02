@@ -37,6 +37,7 @@ public class CourseControllerTest {
 
     @Test
     public  void createCourseSuccessfully() throws Exception {
+        this.objectMapper=new ObjectMapper();
         this.mockMvc= MockMvcBuilders.standaloneSetup(courseController).build();
         CourseCreateRequest courseCreateRequest=getCourseCreateRequest();
         new Expectations(){{
